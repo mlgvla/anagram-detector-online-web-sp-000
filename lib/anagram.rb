@@ -15,6 +15,7 @@ class Anagram
     if !array.include?(@word)
       []
     else
+      binding.pry
       array.select do |w|
         alpha_string(w) == alpha_string(@word)
       end
