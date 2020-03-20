@@ -7,20 +7,20 @@ class Anagram
   end
 
   def match(array)
-    binding.pry
-    if !array.include?(@word)
-      []
-    else
-      binding.pry
+    # binding.pry
+    # if !array.include?(@word)
+    #   []
+    # else
+    #   binding.pry
       array.select do |w|
         alpha_string(w) == alpha_string(@word)
       end
-    end
+  #  end
   end
 
   def alpha_string(word)
      word.split("").sort.join
-     binding.pry
+     #binding.pry
   end
 end
 
