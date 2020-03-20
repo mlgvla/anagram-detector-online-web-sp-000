@@ -7,9 +7,10 @@ class Anagram
   end
 
   def match(array)
+    
     no_match = []
+    binding.pry
     if no_match ==  array.select {|w| w == @word}
-      binding.pry
       no_match
     else
       array.select do |w|
@@ -21,16 +22,16 @@ class Anagram
 
   def alpha_string(word)
      word.split("").sort.join
+     binding.pry
   end
 end
 
 # Sandbox
-#
+# 
 # word = "listen"
 # array = %w(enlists google inlets banana)
-#
 # def alpha_string(word)
 #    word.split("").sort.join
 # end
-#
+
 # array.select {|w| w if alpha_string(w) == alpha_string(word)}
