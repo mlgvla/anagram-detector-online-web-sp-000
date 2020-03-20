@@ -8,10 +8,6 @@ class Anagram
 
   def match(array)
 
-    # no_match = []
-    # binding.pry
-    # if no_match ==  array.select {|w| w == @word}
-    #   no_match
     if !array.include?(@word)
       []
     else
