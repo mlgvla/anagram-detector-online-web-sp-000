@@ -12,7 +12,7 @@ class Anagram
     # binding.pry
     # if no_match ==  array.select {|w| w == @word}
     #   no_match
-    if array.include?(@word)
+    if !array.include?(@word)
       []
     else
       binding.pry
