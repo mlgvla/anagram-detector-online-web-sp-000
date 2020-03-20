@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(array)
-    
+
     no_match = []
     binding.pry
     if no_match ==  array.select {|w| w == @word}
@@ -27,7 +27,7 @@ class Anagram
 end
 
 # Sandbox
-# 
+#
 # word = "listen"
 # array = %w(enlists google inlets banana)
 # def alpha_string(word)
