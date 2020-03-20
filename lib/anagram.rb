@@ -8,13 +8,14 @@ class Anagram
 
   def match(array)
 
-    no_match = []
-    binding.pry
-    if no_match ==  array.select {|w| w == @word}
-      no_match
+    # no_match = []
+    # binding.pry
+    # if no_match ==  array.select {|w| w == @word}
+    #   no_match
+    if !array.include?(@word)
+      []
     else
       array.select do |w|
-        binding.pry
         alpha_string(w) == alpha_string(@word)
       end
     end
